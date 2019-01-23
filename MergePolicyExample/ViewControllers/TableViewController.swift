@@ -23,8 +23,17 @@ class TableViewController: UITableViewController {
         controller.delegate = self
         return controller
     }()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        tableView.tableFooterView = UIView()
+        let refreshView = RefreshView.create()
+        refreshView.delegate = self
+        refreshControl = refreshView
+    }
 
 }
+
 
 //MARK:- TableView dataSource methods override
 extension TableViewController {
@@ -39,6 +48,7 @@ extension TableViewController {
     
 }
 
+
 //MARK:- TableView delegate methods override
 extension TableViewController {
     
@@ -49,6 +59,22 @@ extension TableViewController {
     }
     
 }
+
+
+//MARK:- custom refresh control delegate method
+extension TableViewController: RefreshViewDelegate {
+    
+    func refreshView(_ view: RefreshView, buttonDidTouch type: RefreshButtonType) {
+        switch type {
+            case .setup: break
+            case .update1: break
+            default: break
+        }
+        view.endRefreshing()
+    }
+    
+}
+
 
 //MARK:- FetchedResultsController delegate methods
 extension TableViewController: NSFetchedResultsControllerDelegate {
