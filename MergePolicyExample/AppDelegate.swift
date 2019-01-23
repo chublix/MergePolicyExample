@@ -31,6 +31,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             if let error = error as NSError? {
                 fatalError("Unresolved error \(error), \(error.userInfo)")
             }
+            container.viewContext.automaticallyMergesChangesFromParent = true
+            container.viewContext.mergePolicy = NSMergePolicy.mergeByPropertyStoreTrump
         })
         return container
     }()
@@ -48,8 +50,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
     
-    class var container: NSPersistentContainer! {
-        return (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer
+    class var appDelegate: AppDelegate {
+        return UIApplication.shared.delegate as! AppDelegate
     }
 
 }

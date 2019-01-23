@@ -12,6 +12,7 @@ enum RefreshButtonType: Int {
     case setup      = 0
     case update1
     case update2
+    case close
 }
 
 protocol RefreshViewDelegate: class {

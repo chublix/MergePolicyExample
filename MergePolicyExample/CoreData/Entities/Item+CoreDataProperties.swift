@@ -2,7 +2,7 @@
 //  Item+CoreDataProperties.swift
 //  MergePolicyExample
 //
-//  Created by Andrey Chuprina on 1/22/19.
+//  Created by Andrey Chuprina on 1/24/19.
 //  Copyright © 2019 Andriy Chuprina. All rights reserved.
 //
 //
@@ -17,10 +17,8 @@ extension Item {
         return NSFetchRequest<Item>(entityName: "Item")
     }
 
-    @NSManaged public var name: String?
     @NSManaged public var id: String?
     @NSManaged public var info: String?
-    @NSManaged public var flag: Bool
-    @NSManaged public var flagContainer: FlagContainer?
+    @NSManaged public var name: String?
 
 }
