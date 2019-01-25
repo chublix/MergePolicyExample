@@ -23,28 +23,21 @@
                             <rect key="frame" x="0.0" y="0.0" width="375" height="78"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dbU-b9-v9d">
-                                    <rect key="frame" x="0.0" y="0.0" width="94" height="78"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="125" height="78"/>
                                     <state key="normal" title="Setup"/>
                                     <connections>
                                         <action selector="buttonTouch:" destination="iN0-l3-epB" eventType="touchUpInside" id="6Xb-xr-2z6"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G6A-pc-MA4">
-                                    <rect key="frame" x="94" y="0.0" width="93.5" height="78"/>
-                                    <state key="normal" title="Update 1"/>
+                                    <rect key="frame" x="125" y="0.0" width="125" height="78"/>
+                                    <state key="normal" title="Update"/>
                                     <connections>
                                         <action selector="buttonTouch:" destination="iN0-l3-epB" eventType="touchUpInside" id="Ydg-je-yHT"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9HC-Oq-tvO">
-                                    <rect key="frame" x="187.5" y="0.0" width="94" height="78"/>
-                                    <state key="normal" title="Update 2"/>
-                                    <connections>
-                                        <action selector="buttonTouch:" destination="iN0-l3-epB" eventType="touchUpInside" id="VD9-zA-aim"/>
-                                    </connections>
-                                </button>
                                 <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YnK-Nk-dfl">
-                                    <rect key="frame" x="281.5" y="0.0" width="93.5" height="78"/>
+                                    <rect key="frame" x="250" y="0.0" width="125" height="78"/>
                                     <state key="normal" title="Close"/>
                                     <connections>
                                         <action selector="buttonTouch:" destination="iN0-l3-epB" eventType="touchUpInside" id="mHn-zo-nrp"/>

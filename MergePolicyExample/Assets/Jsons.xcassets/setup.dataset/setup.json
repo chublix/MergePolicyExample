@@ -1,77 +1,27 @@
 [
   {
     "id": 0,
-    "name": "Rhea",
-    "info": "anim ad eu"
+    "name": "Default name 0",
+    "info": "Default info 0"
   },
   {
     "id": 1,
-    "name": "Camacho",
-    "info": "in aliqua veniam"
+    "name": "Default name 1",
+    "info": "Default info 1"
   },
   {
     "id": 2,
-    "name": "Clark",
-    "info": "irure aliqua ea"
+    "name": "Default name 2",
+    "info": "Default info 2"
   },
   {
     "id": 3,
-    "name": "Winifred",
-    "info": "cupidatat sunt cupidatat"
+    "name": "Default name 3",
+    "info": "Default info 3"
   },
   {
     "id": 4,
-    "name": "Leanne",
-    "info": "tempor tempor in"
-  },
-  {
-    "id": 5,
-    "name": "Elisa",
-    "info": "cupidatat eu esse"
-  },
-  {
-    "id": 6,
-    "name": "Robert",
-    "info": "non eiusmod magna"
-  },
-  {
-    "id": 7,
-    "name": "Kay",
-    "info": "sit consectetur exercitation"
-  },
-  {
-    "id": 8,
-    "name": "Calhoun",
-    "info": "occaecat labore et"
-  },
-  {
-    "id": 9,
-    "name": "Esther",
-    "info": "anim aliquip eu"
-  },
-  {
-    "id": 10,
-    "name": "Harris",
-    "info": "cillum et magna"
-  },
-  {
-    "id": 11,
-    "name": "Chavez",
-    "info": "proident velit non"
-  },
-  {
-    "id": 12,
-    "name": "Lina",
-    "info": "sunt aliqua qui"
-  },
-  {
-    "id": 13,
-    "name": "Wells",
-    "info": "velit elit minim"
-  },
-  {
-    "id": 14,
-    "name": "Christa",
-    "info": "laboris aliqua sunt"
+    "name": "Default name 4",
+    "info": "Default info 4"
   }
 ]

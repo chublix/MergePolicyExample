@@ -10,8 +10,7 @@ import UIKit
 
 enum RefreshButtonType: Int {
     case setup      = 0
-    case update1
-    case update2
+    case update
     case close
 }
 

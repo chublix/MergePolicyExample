@@ -138,7 +138,7 @@ extension TableViewController: RefreshViewDelegate {
     func refreshView(_ view: RefreshView, buttonDidTouch type: RefreshButtonType) {
         switch type {
             case .setup: load(name: "setup")
-            case .update1: break
+            case .update: load(name: "update")
             default: break
         }
         view.endRefreshing()
