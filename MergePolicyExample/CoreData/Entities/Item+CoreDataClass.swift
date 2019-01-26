@@ -24,12 +24,11 @@ public class Item: NSManagedObject, Decodable {
     public required convenience init(from decoder: Decoder) throws {
         let context = decoder.userInfo[CodingUserInfoKey.context!] as! NSManagedObjectContext
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        
-        let description = Item.entity()
-        self.init(entity: description, insertInto: context)
+
+        self.init(context: context)
         
         if let intID = try container.decodeIfPresent(Int32.self, forKey: .id) {
-            self.id = "\(intID)"
+            self.id = intID
         }
         
         if let name = try container.decodeIfPresent(String.self, forKey: .name) {
