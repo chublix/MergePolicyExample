@@ -17,6 +17,7 @@ public class Item: NSManagedObject, Decodable {
         case id
         case name
         case info
+        case subitems
     }
     
     
@@ -37,6 +38,10 @@ public class Item: NSManagedObject, Decodable {
         
         if let info = try container.decodeIfPresent(String.self, forKey: .info) {
             self.info = info
+        }
+        
+        if let subitems = try container.decodeIfPresent([Subitem].self, forKey: .subitems) {
+            self.addToSubitems(NSSet(array: subitems))
         }
         
     }

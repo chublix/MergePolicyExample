@@ -4,13 +4,28 @@
         <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="info" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="subitems" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Subitem" inverseName="item" inverseEntity="Subitem" syncable="YES"/>
         <uniquenessConstraints>
             <uniquenessConstraint>
                 <constraint value="id"/>
             </uniquenessConstraint>
         </uniquenessConstraints>
     </entity>
+    <entity name="Subitem" representedClassName="Subitem" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="item" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Item" inverseName="subitems" inverseEntity="Item" syncable="YES"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="id"/>
+            </uniquenessConstraint>
+            <uniquenessConstraint>
+                <constraint value="name"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
     <elements>
-        <element name="Item" positionX="-336.09375" positionY="-27.51171875" width="128" height="88"/>
+        <element name="Item" positionX="-336.09375" positionY="-27.51171875" width="128" height="105"/>
+        <element name="Subitem" positionX="-333" positionY="-9" width="128" height="90"/>
     </elements>
 </model>

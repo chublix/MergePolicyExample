@@ -2,26 +2,76 @@
   {
     "id": 0,
     "name": "Default name 0",
-    "info": "Default info 0"
+    "info": "Default info 0",
+    "subitems" : [
+      {
+        "id": 0,
+        "name": "Default subitem 0"
+      },
+      {
+        "id": 1,
+        "name": "Default subitem 1"
+      }
+    ]
   },
   {
     "id": 1,
     "name": "Default name 1",
-    "info": "Default info 1"
+    "info": "Default info 1",
+    "subitems" : [
+      {
+        "id": 2,
+        "name": "Default subitem 2"
+      },
+      {
+        "id": 3,
+        "name": "Default subitem 3"
+      }
+    ]
   },
   {
     "id": 2,
     "name": "Default name 2",
-    "info": "Default info 2"
+    "info": "Default info 2",
+    "subitems" : [
+      {
+        "id": 0,
+        "name": "Default subitem 0"
+      },
+      {
+        "id": 3,
+        "name": "Default subitem 3"
+      }
+    ]
   },
   {
     "id": 3,
     "name": "Default name 3",
-    "info": "Default info 3"
+    "info": "Default info 3",
+    "subitems" : [
+      {
+        "id": 1,
+        "name": "Default subitem 1"
+      },
+      {
+        "id": 2,
+        "name": "Default subitem 2"
+      }
+    ]
   },
   {
     "id": 4,
     "name": "Default name 4",
-    "info": "Default info 4"
+    "info": "Default info 4",
+    "subitems" : [
+      {
+        "id": 4,
+        "name": "Default subitem 4"
+      },
+      {
+        "id": 5,
+        "name": "Default subitem 5"
+      }
+    ]
   }
 ]

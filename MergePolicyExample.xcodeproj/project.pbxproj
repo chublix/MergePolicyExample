@@ -18,6 +18,9 @@
 		57E4FF0321F792C700E4FD4E /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E4FEFF21F792C700E4FD4E /* Item+CoreDataProperties.swift */; };
 		57E4FF0821F7B69700E4FD4E /* RefreshView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57E4FF0721F7B69700E4FD4E /* RefreshView.xib */; };
 		57E4FF0A21F7B6AD00E4FD4E /* RefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E4FF0921F7B6AD00E4FD4E /* RefreshView.swift */; };
+		57E8CA1B21FC5BDB00FCE04E /* SubitemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E8CA1A21FC5BDB00FCE04E /* SubitemsTableViewController.swift */; };
+		57F2593D21FB3F270008BE71 /* Subitem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F2593B21FB3F270008BE71 /* Subitem+CoreDataClass.swift */; };
+		57F2593E21FB3F270008BE71 /* Subitem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F2593C21FB3F270008BE71 /* Subitem+CoreDataProperties.swift */; };
 		57F8EA9521F900C500B814C3 /* CodingUserInfoKey+context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F8EA9421F900C500B814C3 /* CodingUserInfoKey+context.swift */; };
 		57F8EA9721F9023500B814C3 /* MergePolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F8EA9621F9023500B814C3 /* MergePolicy.swift */; };
 /* End PBXBuildFile section */
@@ -36,6 +39,9 @@
 		57E4FEFF21F792C700E4FD4E /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		57E4FF0721F7B69700E4FD4E /* RefreshView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RefreshView.xib; sourceTree = "<group>"; };
 		57E4FF0921F7B6AD00E4FD4E /* RefreshView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshView.swift; sourceTree = "<group>"; };
+		57E8CA1A21FC5BDB00FCE04E /* SubitemsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubitemsTableViewController.swift; sourceTree = "<group>"; };
+		57F2593B21FB3F270008BE71 /* Subitem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Subitem+CoreDataClass.swift"; sourceTree = "<group>"; };
+		57F2593C21FB3F270008BE71 /* Subitem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Subitem+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		57F8EA9421F900C500B814C3 /* CodingUserInfoKey+context.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CodingUserInfoKey+context.swift"; sourceTree = "<group>"; };
 		57F8EA9621F9023500B814C3 /* MergePolicy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MergePolicy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,6 +109,8 @@
 		57E4FEFB21F7922800E4FD4E /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				57F2593B21FB3F270008BE71 /* Subitem+CoreDataClass.swift */,
+				57F2593C21FB3F270008BE71 /* Subitem+CoreDataProperties.swift */,
 				57E4FEFE21F792C700E4FD4E /* Item+CoreDataClass.swift */,
 				57E4FEFF21F792C700E4FD4E /* Item+CoreDataProperties.swift */,
 			);
@@ -112,6 +120,7 @@
 		57E4FEFC21F7923500E4FD4E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				57E8CA1A21FC5BDB00FCE04E /* SubitemsTableViewController.swift */,
 				57E4FEE721F786C500E4FD4E /* TableViewController.swift */,
 				57E4FEE921F786C500E4FD4E /* Main.storyboard */,
 			);
@@ -220,10 +229,13 @@
 				57E4FEEE21F786C500E4FD4E /* MergePolicyExample.xcdatamodeld in Sources */,
 				57E4FEE821F786C500E4FD4E /* TableViewController.swift in Sources */,
 				57E4FF0221F792C700E4FD4E /* Item+CoreDataClass.swift in Sources */,
+				57E8CA1B21FC5BDB00FCE04E /* SubitemsTableViewController.swift in Sources */,
 				57E4FEE621F786C500E4FD4E /* AppDelegate.swift in Sources */,
+				57F2593D21FB3F270008BE71 /* Subitem+CoreDataClass.swift in Sources */,
 				57E4FF0321F792C700E4FD4E /* Item+CoreDataProperties.swift in Sources */,
 				57F8EA9521F900C500B814C3 /* CodingUserInfoKey+context.swift in Sources */,
 				57E4FF0A21F7B6AD00E4FD4E /* RefreshView.swift in Sources */,
+				57F2593E21FB3F270008BE71 /* Subitem+CoreDataProperties.swift in Sources */,
 				57F8EA9721F9023500B814C3 /* MergePolicy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

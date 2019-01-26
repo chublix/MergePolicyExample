@@ -98,6 +98,12 @@ class TableViewController: UITableViewController {
         }))
         present(alert, animated: true, completion: nil)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? SubitemsTableViewController {
+            vc.subitems = (sender as? Item)?.subitems?.allObjects as? [Subitem]
+        }
+    }
 
 }
 
@@ -123,6 +129,11 @@ extension TableViewController {
         let item = fetchedResultsController.fetchedObjects?[indexPath.row]
         cell.textLabel?.text = item?.name
         cell.detailTextLabel?.text = item?.info
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let item = fetchedResultsController.fetchedObjects?[indexPath.row]
+        performSegue(withIdentifier: "subitems", sender: item)
     }
     
     override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
